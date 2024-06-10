@@ -1,0 +1,24 @@
+{% extends 'festivais/layout.html' %}
+{% load getLocationFestivals %}
+{% load getFestivalBands %}
+
+{% block content %}
+
+{% for localizacao in localizacoes %}
+    <h3>{{localizacao.nome}}</h3>
+    <ul>
+    {% for festival in localizacao|get_location_festivals %}
+        <div><a href="{% url 'festivais:festivais_view' %}">{{festival.nome}}</a> Bandas:</div>
+        {% for banda in festival|get_festival_bands %}
+            <p>{{banda.nome}}</p>
+        {% endfor %}
+
+    {% endfor %}
+
+
+    </ul>
+
+{% endfor %}
+
+
+{% endblock %}

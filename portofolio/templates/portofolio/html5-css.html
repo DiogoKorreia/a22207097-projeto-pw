@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seletores CSS e Combinadores</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'portofolio/portofolioEstilo.css' %}">
+    <script src="https://kit.fontawesome.com/887b169fac.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <div class="text">
+        <h3>Seletores CSS</h3>
+        <p>Os seletores CSS são ferramentas poderosas para selecionar elementos HTML e aplicar estilos a eles. Aqui está uma tabela com alguns seletores comuns:</p>
+
+        <table>
+            <tr>
+                <th>Seletor</th>
+                <th>Utilizado</th>
+                <th>Comentário</th>
+            </tr>
+            <tr>
+                <td>Elemento</td>
+                <td><i class="fas fa-check-circle" style="color: green;"></i></td>
+                <td>Seleciona todos os elementos de um tipo específico, como &lt;p&gt; ou &lt;div&gt;. Utilizei este seletor em toda a estrutura HTML do meu projeto.</td>
+            </tr>
+            <tr>
+                <td>ID</td>
+                <td><i class="fas fa-check-circle" style="color: green;"></i></td>
+                <td>Seleciona um elemento com um ID específico. Usei este seletor para estilizar elementos únicos em páginas individuais.
+            </tr>
+            <tr>
+                <td>Classe</td>
+                <td><i class="fas fa-check-circle" style="color: green;"></i></td>
+                <td>Seleciona todos os elementos com uma classe específica. É muito útil para aplicar estilos a vários elementos ao mesmo tempo.
+            </tr>
+            <tr>
+                <td>Seletor Universal</td>
+                <td><i class="fas fa-check-circle" style="color: green;"></i></td>
+                <td>Seleciona todos os elementos.</td>
+            </tr>
+            <tr>
+                <td>Seletor de Atributo</td>
+                <td><i class="fas fa-check-circle" style="color: green;"></i></td>
+                <td>Seleciona o atributo.</td>
+            </tr>
+
+        </table>
+    </div>
+
+    <div class="text">
+        <h3>Combinadores de Seletores</h3>
+        <p>Os combinadores de seletores permitem selecionar elementos com base em sua relação com outros elementos. Aqui estão alguns exemplos:</p>
+
+        <table>
+            <tr>
+                <th>Combinador</th>
+                <th>Utilizado</th>
+                <th>Comentário</th>
+            </tr>
+            <tr>
+                <td>Espaço</td>
+                <td><i class="fas fa-check-circle" style="color: green;"></i></td>
+                <td>Seleciona elementos que são descendentes de outro elemento. É útil para aplicar estilos a elementos dentro de uma determinada seção.</td>
+            </tr>
+            <tr>
+                <td>&gt;</td>
+                <td><i class="fas fa-check-circle" style="color: green;"></i></td>
+                <td>Seleciona elementos que são filhos diretos de outro elemento. Pode ser útil para aplicar estilos apenas aos elementos de nível imediato.</td>
+            </tr>
+            <tr>
+                <td>+</td>
+                <td><i class="fas fa-times-circle" style="color: red;"></i></td>
+                <td>Não utilizei este combinador no meu projeto até agora.</td>
+            </tr>
+            <tr>
+                <td>~</td>
+                <td><i class="fas fa-times-circle" style="color: red;"></i></td>
+                <td>Não utilizei este combinador no meu projeto até agora.</td>
+            </tr>
+
+
+        </table>
+    </div>
+
+</body>
+</html>

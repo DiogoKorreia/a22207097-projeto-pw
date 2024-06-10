@@ -1,0 +1,29 @@
+<html>
+<head>
+
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'meteo/meteoEstilo.css' %}">
+
+</head>
+
+<body>
+    <h1>Current Weather in {{city}}</h1>
+
+<center>
+    {% load static %}
+    <img src="{% static 'meteo/' %}{{ icon }}" alt="icon">
+
+    <h2>MinTemp: {{tMin}}; MaxTemp: {{tMax}}</h2>
+
+    <p>{{weather}}</p>
+    <p>{{date}}</p>
+
+    <a href="{% url 'meteo:weather_view' %}"><button>Weather</button></a>
+    <a href="{% url 'meteo:api_view' %}"><button>Api</button></a>
+</center>
+
+    <p>Fonte: IPMA API</p>
+
+
+</body>
+</html>

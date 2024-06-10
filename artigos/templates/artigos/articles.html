@@ -1,0 +1,20 @@
+{% extends 'artigos/layout.html' %}
+
+{% block content %}
+
+
+<center>
+    <h1> Articles</h1>
+
+    <ul>
+
+        {% for article in articles %}
+            <li>
+                <a href="{% url 'artigos:article_view' article.id %}"> {{article.title}} </a>
+                <p> {{ article.author.name }} </p>
+            </li>
+        {% endfor %}
+    </ul>
+</center>
+
+{% endblock %}

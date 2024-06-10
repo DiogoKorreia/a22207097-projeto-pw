@@ -1,0 +1,29 @@
+{% extends 'artigos/layout.html' %}
+{% load getUserArticles %}
+
+{% block content %}
+<div align="center">
+    <div style="width: 70%; text-align: left;">
+
+        {% if user.image %}
+            <img src="{{ user.image.url }}" width="150px" alt="User image">
+        {% else %}
+            <p>No image available</p>
+        {% endif %}
+
+        <h1>{{ user.name }}</h1>
+        <h2>{{ user.bio }}</h2>
+
+        <h3>Articles by {{ user.name }}:</h3>
+        <ul>
+            {% for article in user|get_user_articles %}
+                <li>
+                    <a href="{% url 'artigos:article_view' article.id %}"> {{ article.title }} </a>
+                    <p>{{ article.intro }}</p>
+                </li>
+            {% endfor %}
+        </ul>
+
+    </div>
+</div>
+{% endblock %}

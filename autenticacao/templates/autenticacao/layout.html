@@ -1,0 +1,65 @@
+<html>
+    <head>
+
+
+        <title></title>
+        <style>
+            /* Base styling */
+            body {
+                font-family: 'Arial', sans-serif;  /* Clean, widely available font */
+                font-size: 16px;  /* Base font size */
+                line-height: 1.5;  /* Good readability */
+                background: #ffffff;  /* White background */
+                color: #333;  /* Dark text for contrast */
+                margin: 0;
+                padding: 0;
+            }
+
+            header {
+                background: #FFD700;  /* Yellow background for header (Gold) */
+                color: #333;  /* Dark text for contrast */
+                padding: 10px;  /* Padding around header */
+                text-align: center;  /* Center header content */
+            }
+
+            button {
+                background: #FEFEFE;  /* Yellow button background */
+                color: #333;  /* Dark button text */
+                border: none;  /* No border */
+                padding: 10px 20px;  /* Padding for button */
+                cursor: pointer;  /* Change cursor on hover */
+                border-radius: 5px;  /* Rounded corners for button */
+            }
+
+            button:hover {
+                background: #FFC700;  /* Slightly darker yellow on hover */
+            }
+
+            footer {
+                text-align: center;  /* Center footer content */
+                padding: 10px;  /* Padding around footer */
+                background: #FFD700;  /* Yellow background for footer */
+                color: #333;  /* Dark text for contrast */
+            }
+
+            main {
+                padding: 20px;  /* Padding around main content */
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Lusófona</h1>
+
+        </header>
+
+        <main>
+            {% block content %}
+            {% endblock %}
+        </main>
+
+        <footer>
+            <p></p>
+        </footer>
+    </body>
+</html>

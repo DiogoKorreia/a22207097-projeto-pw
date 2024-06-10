@@ -1,0 +1,20 @@
+{% extends 'bands/layout.html' %}
+
+{% block content %}
+
+
+    <h1> Band List</h1>
+
+<div class="bands-container">
+
+    {% load orderBands %}
+    {% for band in bands|order_bands %}
+        <div class="band">
+            <a href="{% url 'bands:band_albums' band.id %}"> <img src="{{ band.image.url }}" width="100px" alt="Band cover"> </a>
+            <p class="band-name"> {{ band.name }} </p>
+        </div>
+    {% endfor %}
+
+</div>
+
+{% endblock %}

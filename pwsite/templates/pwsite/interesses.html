@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programação Web</title>
+</head>
+<body>
+
+    <header>
+        <h1>Interesses em Programação Web</h1>
+            <nav>
+                <a href="{% url 'pwsite:index' %}">Introducao</a>
+                <a href="{% url 'pwsite:sobre' %}">Sobre</a>
+                <a href="{% url 'pwsite:interesses' %}">Interesses da Disciplina</a>
+            </nav>
+    </header>
+
+    <main>
+      <p>A disciplina de Programação Web na Universidade Lusófona é oferecida aos estudantes dos cursos de Engenharia Informática e Informática de Gestão no 2º ano e segundo semestre.</p>
+      <p>Neste curso, os alunos mergulham nas tecnologias e conceitos fundamentais para o desenvolvimento de aplicações web modernas e escaláveis.</p>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Programação Web, Universidade Lusófona - Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>

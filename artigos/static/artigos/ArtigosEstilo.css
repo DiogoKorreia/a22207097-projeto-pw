@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Danfo&family=Sedan+SC&display=swap');
+
+/*  Articles  */
+
+.articles-layout > *{
+    color: black;
+    border: 1px solid black;
+    font-size: 1.3rem;
+}
+
+.articles-layout > header{
+    grid-area:header;
+    background-color:#FFBF78;
+    border: 1px solid black;
+    padding: 1rem;
+    font-size: 1.3rem;
+    text-align:center;
+}
+
+.articles-layout > footer{
+    grid-area:footer;
+    background-color:#FFBF78;
+    border: 1px solid black;
+    padding: 1rem;
+    font-size: 1.3rem;
+    text-align:center;
+}
+
+.articles-layout > nav{
+    grid-area:nav;
+    display: flex;
+    flex-direction:column;
+    justify-content: flex-start;
+    background-color: #FFEEA9;
+}
+
+.articles-layout > main{
+    grid-area:main;
+    background-color:#FEFFD2;
+    border: 1px solid black;
+    padding: 1rem;
+    font-size: 1.3rem;
+}
+
+button {
+    background-color:#FF7D29;
+    border:0px;
+
+}
+
+
+/* Articles Container */
+
+.articles-layout{
+    background:#FF7D29;
+    display:grid;
+    grid-template-areas:
+    'header header header'
+    'nav    main   main'
+    'footer footer footer';
+    gap:10px;
+    padding: 10px;
+
+    grid-template-columns: 10vw 1fr;
+    grid-template-rows: 20vh 1fr 10vh;
+}
+
+/* Article Container */
+
+.article-layout{
+    background:#FF7D29;
+    display:flex;
+    flex-direction:column;
+
+
+}
+
+/* Articles Media */
+
+@media (max-width:700px){
+    .articles-layout{
+        height:auto;
+        grid-template-areas:
+        'header'
+        'nav'
+        'main'
+        'footer';
+        grid-template-columns: auto;
+        grid-template-rows: 10vh 10vh 1fr 5vh;
+    }
+}
+
+

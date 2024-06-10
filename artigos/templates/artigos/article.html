@@ -1,0 +1,39 @@
+{% extends 'artigos/layout.html' %}
+{% load getArticleComments getArticleTopics newlineToParagraph getArticleRating%}
+
+{% block content %}
+
+<div class="article-container">
+
+    <h1>{{ article.title }} by {{ article.author.name }}</h1>
+    <h2>{{ article.intro }}</h2>
+
+
+        {{ article.content | newline_to_paragraph | safe }}
+
+        <ul>
+            {% for topic in article|get_article_topics %}
+                <li>
+                    <h2>{{ topic.title }}</h2>
+                    <p>{{ topic.content | newline_to_paragraph | safe }}</p>
+                </li>
+            {% endfor %}
+        </ul>
+
+        <p>{{ article.created_at }}</p>
+        <a href="{% url 'artigos:user_view' article.author.id %}">{{ article.author.name }}</a>
+
+        <h3>Rating: {{ article|get_article_rating }}/5 ⭐</h3>
+
+        <h2>Comments</h2>
+
+        <ul>
+            {% for comment in article|get_article_comments %}
+                <li>
+                    <a href="{% url 'artigos:user_view' comment.user.id %}">{{ comment.user.name }}</a>
+                    <p>{{ comment.content | newline_to_paragraph | safe }}</p>
+                </li>
+            {% endfor %}
+        </ul>
+</div>
+{% endblock %}

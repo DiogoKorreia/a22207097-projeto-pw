@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Danfo&family=Sedan+SC&display=swap" rel="stylesheet">
+
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'artigos/ArtigosEstilo.css' %}">
+
+    <title>Articles</title>
+    <style>
+    {% block style %}
+
+    {% endblock %}
+    </style>
+</head>
+
+<div class=articles-layout>
+    <header>
+        <h1>Articles - Lusófona</h1>
+    </header>
+
+    <nav>
+        {% if request.user.is_authenticated %}
+            Username: {{ request.user.username }}
+            <a href="{% url 'autenticacao:logout' %}"><button>Logout</button></a>
+        {% else %}
+            <a href="{% url 'autenticacao:login' %}"><button>Login</button></a>
+            <a href="{% url 'autenticacao:register' %}"><button>Register</button></a>
+        {% endif %}
+
+        <a href="{% url 'artigos:home' %}"><button>Home</button></a>
+    </nav>
+
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+
+    <footer>
+        <p>Universidade Lusófona</p>
+    </footer>
+</div>
+</html>

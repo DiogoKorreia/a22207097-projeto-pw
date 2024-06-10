@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'meteo/meteoEstilo.css' %}">
+    <title>Weather Forecast</title>
+</head>
+<body>
+    <div class="top">
+        <h1>Weather Forecast for the Next 5 Days</h1>
+
+        <form method="get" action="{% url 'meteo:weather_view' %}" class="auth">
+            <label for="city">Select a city:</label>
+            <select name="city" id="city">
+                {% for city in cities %}
+                    <option value="{{ city.local }}" {% if city.local == selected_city %}selected{% endif %}>{{ city.local }}</option>
+                {% endfor %}
+            </select>
+            <button type="submit">Get Forecast</button>
+        </form>
+    </div>
+
+    {% load static %}
+
+    {% if forecast_data %}
+        <div class="text">
+            <h2>Weather Forecast for {{ selected_city }}</h2>
+            <ul>
+                {% for day in forecast_data %}
+                    <li>
+                        <img src="{% static 'meteo/' %}{{ day.icon }}" alt="icon">
+                        <p>Date: {{ day.forecastDate }}</p>
+                        <p>Min Temp: {{ day.tMin }}</p>
+                        <p>Max Temp: {{ day.tMax }}</p>
+                        <p>Description: {{ day.weatherInfo }}</p>
+                    </li>
+                {% endfor %}
+            </ul>
+        </div>
+    {% endif %}
+
+    <p class="text">Fonte: IPMA API</p>
+</body>
+</html>

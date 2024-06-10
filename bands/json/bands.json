@@ -1,0 +1,865 @@
+{
+    "Led Zeppelin": {
+        "name": "Led Zeppelin",
+        "image": "led_zeppelin.jpg",
+        "creationDate": "1968-01-12",
+        "artists": [
+            {
+                "firstName": "Robert",
+                "lastName": "Plant",
+                "instrument": "Vocalist",
+                "age": 73
+            },
+            {
+                "firstName": "Jimmy",
+                "lastName": "Page",
+                "instrument": "Guitarist",
+                "age": 78
+            },
+            {
+                "firstName": "John",
+                "lastName": "Paul Jones",
+                "instrument": "Bassist",
+                "age": 75
+            },
+            {
+                "firstName": "John",
+                "lastName": "Bonham",
+                "instrument": "Drummer",
+                "age": 1948
+            }
+        ],
+        "albums": [
+            {
+                "name": "Led Zeppelin I",
+                "image": "led_zeppelin_i.jpg",
+                "albumLink": "https://example.com/led_zeppelin_i",
+                "releaseDate": "1969-01-12",
+                "rating": 5,
+                "musics": [
+                    {
+                        "title": "Good Times Bad Times",
+                        "duration": "0:02:46",
+                        "musicLink": "https://example.com/good_times_bad_times",
+                        "releaseDate": "1969-01-12",
+                        "rating": 5
+                    },
+                    {
+                        "title": "Babe I'm Gonna Leave You",
+                        "duration": "0:06:41",
+                        "musicLink": "https://example.com/babe_im_gonna_leave_you",
+                        "releaseDate": "1969-01-12",
+                        "rating": 5
+                    }
+                ]
+            },
+            {
+                "name": "Led Zeppelin II",
+                "image": "led_zeppelin_ii.jpg",
+                "albumLink": "https://example.com/led_zeppelin_ii",
+                "releaseDate": "1969-10-22",
+                "rating": 5,
+                "musics": [
+                    {
+                        "title": "Whole Lotta Love",
+                        "duration": "0:05:34",
+                        "musicLink": "https://example.com/whole_lotta_love",
+                        "releaseDate": "1969-10-22",
+                        "rating": 5
+                    },
+                    {
+                        "title": "Heartbreaker",
+                        "duration": "0:04:14",
+                        "musicLink": "https://example.com/heartbreaker",
+                        "releaseDate": "1969-10-22",
+                        "rating": 5
+                    }
+                ]
+            }
+        ]
+    },
+    "The Beatles": {
+        "name": "The Beatles",
+        "image": "the_beatles.jpg",
+        "creationDate": "1960-08-01",
+        "artists": [
+            {
+                "firstName": "John",
+                "lastName": "Lennon",
+                "instrument": "Guitarist, Vocalist",
+                "age": 1940
+            },
+            {
+                "firstName": "Paul",
+                "lastName": "McCartney",
+                "instrument": "Bassist, Vocalist",
+                "age": 1942
+            },
+            {
+                "firstName": "George",
+                "lastName": "Harrison",
+                "instrument": "Guitarist, Vocalist",
+                "age": 1943
+            },
+            {
+                "firstName": "Ringo",
+                "lastName": "Starr",
+                "instrument": "Drummer",
+                "age": 1940
+            }
+        ],
+        "albums": [
+            {
+                "name": "Abbey Road",
+                "image": "abbey_road.jpg",
+                "albumLink": "https://example.com/abbey_road",
+                "releaseDate": "1969-09-26",
+                "rating": 5,
+                "musics": [
+                    {
+                        "title": "Come Together",
+                        "duration": "0:04:20",
+                        "musicLink": "https://example.com/come_together",
+                        "releaseDate": "1969-09-26",
+                        "rating": 5
+                    },
+                    {
+                        "title": "Here Comes the Sun",
+                        "duration": "0:03:05",
+                        "musicLink": "https://example.com/here_comes_the_sun",
+                        "releaseDate": "1969-09-26",
+                        "rating": 5
+                    }
+                ]
+            },
+            {
+                "name": "Sgt. Pepper's Lonely Hearts Club Band",
+                "image": "sgt_pepper.jpg",
+                "albumLink": "https://example.com/sgt_pepper",
+                "releaseDate": "1967-05-26",
+                "rating": 5,
+                "musics": [
+                    {
+                        "title": "Lucy in the Sky with Diamonds",
+                        "duration": "0:03:28",
+                        "musicLink": "https://example.com/lucy_in_the_sky",
+                        "releaseDate": "1967-05-26",
+                        "rating": 5
+                    },
+                    {
+                        "title": "A Day in the Life",
+                        "duration": "0:05:39",
+                        "musicLink": "https://example.com/a_day_in_the_life",
+                        "releaseDate": "1967-05-26",
+                        "rating": 5
+                    }
+                ]
+            }
+        ]
+    },
+    "Pink Floyd": {
+        "name": "Pink Floyd",
+        "image": "pink_floyd.jpg",
+        "creationDate": "1965-01-01",
+        "artists": [
+            {
+                "firstName": "Roger",
+                "lastName": "Waters",
+                "instrument": "Bassist, Vocalist",
+                "age": 1943
+            },
+            {
+                "firstName": "David",
+                "lastName": "Gilmour",
+                "instrument": "Guitarist, Vocalist",
+                "age": 1946
+            },
+            {
+                "firstName": "Nick",
+                "lastName": "Mason",
+                "instrument": "Drummer",
+                "age": 1944
+            },
+            {
+                "firstName": "Richard",
+                "lastName": "Wright",
+                "instrument": "Keyboardist",
+                "age": 1943
+            }
+        ],
+        "albums": [
+            {
+                "name": "The Dark Side of the Moon",
+                "image": "dark_side_of_the_moon.jpg",
+                "albumLink": "https://example.com/dark_side_of_the_moon",
+                "releaseDate": "1973-03-01",
+                "rating": 5,
+                "musics": [
+                    {
+                        "title": "Speak to Me",
+                        "duration": "0:01:13",
+                        "musicLink": "https://example.com/speak_to_me",
+                        "releaseDate": "1973-03-01",
+                        "rating": 5
+                    },
+                    {
+                        "title": "Breathe",
+                        "duration": "0:02:43",
+                        "musicLink": "https://example.com/breathe",
+                        "releaseDate": "1973-03-01",
+                        "rating": 5
+                    }
+                ]
+            },
+            {
+                "name": "Wish You Were Here",
+                "image": "wish_you_were_here.jpg",
+                "albumLink": "https://example.com/wish_you_were_here",
+                "releaseDate": "1975-09-12",
+                "rating": 5,
+                "musics": [
+                    {
+                        "title": "Shine On You Crazy Diamond",
+                        "duration": "0:13:31",
+                        "musicLink": "https://example.com/shine_on_you_crazy_diamond",
+                        "releaseDate": "1975-09-12",
+                        "rating": 5
+                    },
+                    {
+                        "title": "Wish You Were Here",
+                        "duration": "0:05:34",
+                        "musicLink": "https://example.com/wish_you_were_here",
+                        "releaseDate": "1975-09-12",
+                        "rating": 5
+                    }
+                ]
+            }
+        ]
+    },
+    "Queen": {
+        "name": "Queen",
+        "image": "queen.jpg",
+        "creationDate": "1970-06-27",
+        "artists": [
+            {
+                "firstName": "Freddie",
+                "lastName": "Mercury",
+                "instrument": "Vocalist, Pianist",
+                "age": 1946
+            },
+            {
+                "firstName": "Brian",
+                "lastName": "May",
+                "instrument": "Guitarist",
+                "age": 1947
+            },
+            {
+                "firstName": "Roger",
+                "lastName": "Taylor",
+                "instrument": "Drummer",
+                "age": 1949
+            },
+            {
+                "firstName": "John",
+                "lastName": "Deacon",
+                "instrument": "Bassist",
+                "age": 1951
+            }
+        ],
+        "albums": [
+            {
+                "name": "A Night at the Opera",
+                "image": "night_at_the_opera.jpg",
+                "albumLink": "https://example.com/night_at_the_opera",
+                "releaseDate": "1975-11-21",
+                "rating": 5,
+                "musics": [
+                    {
+                        "title": "Bohemian Rhapsody",
+                        "duration": "0:05:55",
+                        "musicLink": "https://example.com/bohemian_rhapsody",
+                        "releaseDate": "1975-11-21",
+                        "rating": 5
+                    },
+                    {
+                        "title": "You're My Best Friend",
+                        "duration": "0:02:50",
+                        "musicLink": "https://example.com/youre_my_best_friend",
+                        "releaseDate": "1975-11-21",
+                        "rating": 5
+                    }
+                ]
+            },
+            {
+                "name": "The Game",
+                "image": "the_game.jpg",
+                "albumLink": "https://example.com/the_game",
+                "releaseDate": "1980-06-30",
+                "rating": 5,
+                "musics": [
+                    {
+                        "title": "Another One Bites the Dust",
+                        "duration": "0:03:36",
+                        "musicLink": "https://example.com/another_one_bites_the_dust",
+                        "releaseDate": "1980-06-30",
+                        "rating": 5
+                    },
+                    {
+                        "title": "Crazy Little Thing Called Love",
+                        "duration": "0:02:42",
+                        "musicLink": "https://example.com/crazy_little_thing_called_love",
+                        "releaseDate": "1980-06-30",
+                        "rating": 5
+                    }
+                ]
+            }
+        ]
+    },
+    "AC/DC": {
+        "name": "AC/DC",
+        "image": "acdc.jpg",
+        "creationDate": "1973-11-01",
+        "artists": [
+            {
+                "firstName": "Angus",
+                "lastName": "Young",
+                "instrument": "Guitarist",
+                "age": 1955
+            },
+            {
+                "firstName": "Malcolm",
+                "lastName": "Young",
+                "instrument": "Guitarist",
+                "age": 1953
+            },
+            {
+                "firstName": "Bon",
+                "lastName": "Scott",
+                "instrument": "Vocalist",
+                "age": 1946
+            },
+            {
+                "firstName": "Phil",
+                "lastName": "Rudd",
+                "instrument": "Drummer",
+                "age": 1954
+            }
+        ],
+        "albums": [
+            {
+                "name": "Back in Black",
+                "image": "back_in_black.jpg",
+                "albumLink": "https://example.com/back_in_black",
+                "releaseDate": "1980-07-25",
+                "rating": 5,
+                "musics": [
+                    {
+                        "title": "Hells Bells",
+                        "duration": "0:05:12",
+                        "musicLink": "https://example.com/hells_bells",
+                        "releaseDate": "1980-07-25",
+                        "rating": 5
+                    },
+                    {
+                        "title": "Back in Black",
+                        "duration": "0:04:15",
+                        "musicLink": "https://example.com/back_in_black",
+                        "releaseDate": "1980-07-25",
+                        "rating": 5
+                    }
+                ]
+            },
+            {
+                "name": "Highway to Hell",
+                "image": "highway_to_hell.jpg",
+                "albumLink": "https://example.com/highway_to_hell",
+                "releaseDate": "1979-07-27",
+                "rating": 5,
+                "musics": [
+                    {
+                        "title": "Highway to Hell",
+                        "duration": "0:03:28",
+                        "musicLink": "https://example.com/highway_to_hell",
+                        "releaseDate": "1979-07-27",
+                        "rating": 5
+                    },
+                    {
+                        "title": "Girls Got Rhythm",
+                        "duration": "0:03:23",
+                        "musicLink": "https://example.com/girls_got_rhythm",
+                        "releaseDate": "1979-07-27",
+                        "rating": 5
+                    }
+                ]
+            }
+        ]
+    },
+    "The Rolling Stones": {
+        "name": "The Rolling Stones",
+        "image": "rolling_stones.jpg",
+        "creationDate": "1962-07-12",
+        "artists": [
+            {
+                "firstName": "Mick",
+                "lastName": "Jagger",
+                "instrument": "Vocalist",
+                "age": 1943
+            },
+            {
+                "firstName": "Keith",
+                "lastName": "Richards",
+                "instrument": "Guitarist",
+                "age": 1943
+            },
+            {
+                "firstName": "Charlie",
+                "lastName": "Watts",
+                "instrument": "Drummer",
+                "age": 1941
+            },
+            {
+                "firstName": "Ronnie",
+                "lastName": "Wood",
+                "instrument": "Guitarist",
+                "age": 1947
+            }
+        ],
+        "albums": [
+            {
+                "name": "Sticky Fingers",
+                "image": "sticky_fingers.jpg",
+                "albumLink": "https://example.com/sticky_fingers",
+                "releaseDate": "1971-04-23",
+                "rating": 5,
+                "musics": [
+                    {
+                        "title": "Brown Sugar",
+                        "duration": "0:03:50",
+                        "musicLink": "https://example.com/brown_sugar",
+                        "releaseDate": "1971-04-23",
+                        "rating": 5
+                    },
+                    {
+                        "title": "Wild Horses",
+                        "duration": "0:05:41",
+                        "musicLink": "https://example.com/wild_horses",
+                        "releaseDate": "1971-04-23",
+                        "rating": 5
+                    }
+                ]
+            },
+            {
+                "name": "Let It Bleed",
+                "image": "let_it_bleed.jpg",
+                "albumLink": "https://example.com/let_it_bleed",
+                "releaseDate": "1969-12-05",
+                "rating": 5,
+                "musics": [
+                    {
+                        "title": "Gimme Shelter",
+                        "duration": "0:04:31",
+                        "musicLink": "https://example.com/gimme_shelter",
+                        "releaseDate": "1969-12-05",
+                        "rating": 5
+                    },
+                    {
+                        "title": "You Can't Always Get What You Want",
+                        "duration": "0:07:30",
+                        "musicLink": "https://example.com/you_cant_always_get_what_you_want",
+                        "releaseDate": "1969-12-05",
+                        "rating": 5
+                    }
+                ]
+            }
+        ]
+    },
+    "Nirvana": {
+        "name": "Nirvana",
+        "image": "nirvana.jpg",
+        "creationDate": "1987-01-01",
+        "artists": [
+            {
+                "firstName": "Kurt",
+                "lastName": "Cobain",
+                "instrument": "Guitarist, Vocalist",
+                "age": 1967
+            },
+            {
+                "firstName": "Krist",
+                "lastName": "Novoselic",
+                "instrument": "Bassist",
+                "age": 1965
+            },
+            {
+                "firstName": "Dave",
+                "lastName": "Grohl",
+                "instrument": "Drummer",
+                "age": 1969
+            }
+        ],
+        "albums": [
+            {
+                "name": "Nevermind",
+                "image": "nevermind.jpg",
+                "albumLink": "https://example.com/nevermind",
+                "releaseDate": "1991-09-24",
+                "rating": 5,
+                "musics": [
+                    {
+                        "title": "Smells Like Teen Spirit",
+                        "duration": "0:05:01",
+                        "musicLink": "https://example.com/smells_like_teen_spirit",
+                        "releaseDate": "1991-09-24",
+                        "rating": 5
+                    },
+                    {
+                        "title": "Come as You Are",
+                        "duration": "0:03:38",
+                        "musicLink": "https://example.com/come_as_you_are",
+                        "releaseDate": "1991-09-24",
+                        "rating": 5
+                    }
+                ]
+            },
+            {
+                "name": "In Utero",
+                "image": "in_utero.jpg",
+                "albumLink": "https://example.com/in_utero",
+                "releaseDate": "1993-09-21",
+                "rating": 5,
+                "musics": [
+                    {
+                        "title": "Heart-Shaped Box",
+                        "duration": "0:04:39",
+                        "musicLink": "https://example.com/heart_shaped_box",
+                        "releaseDate": "1993-09-21",
+                        "rating": 5
+                    },
+                    {
+                        "title": "All Apologies",
+                        "duration": "0:03:51",
+                        "musicLink": "https://example.com/all_apologies",
+                        "releaseDate": "1993-09-21",
+                        "rating": 5
+                    }
+                ]
+            }
+        ]
+    },
+    "Metallica": {
+        "name": "Metallica",
+        "image": "metallica.jpg",
+        "creationDate": "1981-10-28",
+        "artists": [
+            {
+                "firstName": "James",
+                "lastName": "Hetfield",
+                "instrument": "Vocalist, Guitarist",
+                "age": 1963
+            },
+            {
+                "firstName": "Lars",
+                "lastName": "Ulrich",
+                "instrument": "Drummer",
+                "age": 1963
+            },
+            {
+                "firstName": "Kirk",
+                "lastName": "Hammett",
+                "instrument": "Guitarist",
+                "age": 1962
+            },
+            {
+                "firstName": "Robert",
+                "lastName": "Trujillo",
+                "instrument": "Bassist",
+                "age": 1964
+            }
+        ],
+        "albums": [
+            {
+                "name": "Metallica (The Black Album)",
+                "image": "the_black_album.jpg",
+                "albumLink": "https://example.com/the_black_album",
+                "releaseDate": "1991-08-12",
+                "rating": 5,
+                "musics": [
+                    {
+                        "title": "Enter Sandman",
+                        "duration": "0:05:29",
+                        "musicLink": "https://example.com/enter_sandman",
+                        "releaseDate": "1991-08-12",
+                        "rating": 5
+                    },
+                    {
+                        "title": "Nothing Else Matters",
+                        "duration": "0:06:28",
+                        "musicLink": "https://example.com/nothing_else_matters",
+                        "releaseDate": "1991-08-12",
+                        "rating": 5
+                    }
+                ]
+            },
+            {
+                "name": "Master of Puppets",
+                "image": "master_of_puppets.jpg",
+                "albumLink": "https://example.com/master_of_puppets",
+                "releaseDate": "1986-03-03",
+                "rating": 5,
+                "musics": [
+                    {
+                        "title": "Battery",
+                        "duration": "0:05:12",
+                        "musicLink": "https://example.com/battery",
+                        "releaseDate": "1986-03-03",
+                        "rating": 5
+                    },
+                    {
+                        "title": "Master of Puppets",
+                        "duration": "0:08:35",
+                        "musicLink": "https://example.com/master_of_puppets",
+                        "releaseDate": "1986-03-03",
+                        "rating": 5
+                    }
+                ]
+            }
+        ]
+    },
+    "Guns N' Roses": {
+        "name": "Guns N' Roses",
+        "image": "guns_n_roses.jpg",
+        "creationDate": "1985-03-01",
+        "artists": [
+            {
+                "firstName": "Axl",
+                "lastName": "Rose",
+                "instrument": "Vocalist",
+                "age": 1962
+            },
+            {
+                "firstName": "Slash",
+                "lastName": "",
+                "instrument": "Guitarist",
+                "age": 1965
+            },
+            {
+                "firstName": "Duff",
+                "lastName": "McKagan",
+                "instrument": "Bassist",
+                "age": 1964
+            },
+            {
+                "firstName": "Steven",
+                "lastName": "Adler",
+                "instrument": "Drummer",
+                "age": 1965
+            }
+        ],
+        "albums": [
+            {
+                "name": "Appetite for Destruction",
+                "image": "appetite_for_destruction.jpg",
+                "albumLink": "https://example.com/appetite_for_destruction",
+                "releaseDate": "1987-07-21",
+                "rating": 5,
+                "musics": [
+                    {
+                        "title": "Sweet Child o' Mine",
+                        "duration": "0:05:55",
+                        "musicLink": "https://example.com/sweet_child_o_mine",
+                        "releaseDate": "1987-07-21",
+                        "rating": 5
+                    },
+                    {
+                        "title": "Welcome to the Jungle",
+                        "duration": "0:04:34",
+                        "musicLink": "https://example.com/welcome_to_the_jungle",
+                        "releaseDate": "1987-07-21",
+                        "rating": 5
+                    }
+                ]
+            },
+            {
+                "name": "Use Your Illusion I",
+                "image": "use_your_illusion_i.jpg",
+                "albumLink": "https://example.com/use_your_illusion_i",
+                "releaseDate": "1991-09-17",
+                "rating": 5,
+                "musics": [
+                    {
+                        "title": "November Rain",
+                        "duration": "0:08:57",
+                        "musicLink": "https://example.com/november_rain",
+                        "releaseDate": "1991-09-17",
+                        "rating": 5
+                    },
+                    {
+                        "title": "Don't Cry",
+                        "duration": "0:04:44",
+                        "musicLink": "https://example.com/dont_cry",
+                        "releaseDate": "1991-09-17",
+                        "rating": 5
+                    }
+                ]
+            }
+        ]
+    },
+    "The Doors": {
+        "name": "The Doors",
+        "image": "the_doors.jpg",
+        "creationDate": "1965-07-01",
+        "artists": [
+            {
+                "firstName": "Jim",
+                "lastName": "Morrison",
+                "instrument": "Vocalist",
+                "age": 1943
+            },
+            {
+                "firstName": "Ray",
+                "lastName": "Manzarek",
+                "instrument": "Keyboardist",
+                "age": 1939
+            },
+            {
+                "firstName": "Robby",
+                "lastName": "Krieger",
+                "instrument": "Guitarist",
+                "age": 1946
+            },
+            {
+                "firstName": "John",
+                "lastName": "Densmore",
+                "instrument": "Drummer",
+                "age": 1944
+            }
+        ],
+        "albums": [
+            {
+                "name": "The Doors",
+                "image": "the_doors_album.jpg",
+                "albumLink": "https://example.com/the_doors_album",
+                "releaseDate": "1967-01-04",
+                "rating": 5,
+                "musics": [
+                    {
+                        "title": "Break On Through (To the Other Side)",
+                        "duration": "0:02:29",
+                        "musicLink": "https://example.com/break_on_through",
+                        "releaseDate": "1967-01-04",
+                        "rating": 5
+                    },
+                    {
+                        "title": "Light My Fire",
+                        "duration": "0:07:08",
+                        "musicLink": "https://example.com/light_my_fire",
+                        "releaseDate": "1967-01-04",
+                        "rating": 5
+                    }
+                ]
+            },
+            {
+                "name": "L.A. Woman",
+                "image": "la_woman.jpg",
+                "albumLink": "https://example.com/la_woman",
+                "releaseDate": "1971-04-19",
+                "rating": 5,
+                "musics": [
+                    {
+                        "title": "Riders on the Storm",
+                        "duration": "0:07:14",
+                        "musicLink": "https://example.com/riders_on_the_storm",
+                        "releaseDate": "1971-04-19",
+                        "rating": 5
+                    },
+                    {
+                        "title": "L.A. Woman",
+                        "duration": "0:07:49",
+                        "musicLink": "https://example.com/la_woman",
+                        "releaseDate": "1971-04-19",
+                        "rating": 5
+                    }
+                ]
+            }
+        ]
+    },
+    "Red Hot Chili Peppers": {
+        "name": "Red Hot Chili Peppers",
+        "image": "red_hot_chili_peppers.jpg",
+        "creationDate": "1983-01-01",
+        "artists": [
+            {
+                "firstName": "Anthony",
+                "lastName": "Kiedis",
+                "instrument": "Vocalist",
+                "age": 1962
+            },
+            {
+                "firstName": "Flea",
+                "lastName": "",
+                "instrument": "Bassist",
+                "age": 1962
+            },
+            {
+                "firstName": "John",
+                "lastName": "Frusciante",
+                "instrument": "Guitarist",
+                "age": 1970
+            },
+            {
+                "firstName": "Chad",
+                "lastName": "Smith",
+                "instrument": "Drummer",
+                "age": 1961
+            }
+        ],
+        "albums": [
+            {
+                "name": "Blood Sugar Sex Magik",
+                "image": "blood_sugar_sex_magik.jpg",
+                "albumLink": "https://example.com/blood_sugar_sex_magik",
+                "releaseDate": "1991-09-24",
+                "rating": 5,
+                "musics": [
+                    {
+                        "title": "Under the Bridge",
+                        "duration": "0:04:24",
+                        "musicLink": "https://example.com/under_the_bridge",
+                        "releaseDate": "1991-09-24",
+                        "rating": 5
+                    },
+                    {
+                        "title": "Give It Away",
+                        "duration": "0:04:43",
+                        "musicLink": "https://example.com/give_it_away",
+                        "releaseDate": "1991-09-24",
+                        "rating": 5
+                    }
+                ]
+            },
+            {
+                "name": "Californication",
+                "image": "californication.jpg",
+                "albumLink": "https://example.com/californication",
+                "releaseDate": "1999-06-08",
+                "rating": 5,
+                "musics": [
+                    {
+                        "title": "Scar Tissue",
+                        "duration": "0:03:37",
+                        "musicLink": "https://example.com/scar_tissue",
+                        "releaseDate": "1999-06-08",
+                        "rating": 5
+                    },
+                    {
+                        "title": "Otherside",
+                        "duration": "0:04:15",
+                        "musicLink": "https://example.com/otherside",
+                        "releaseDate": "1999-06-08",
+                        "rating": 5
+                    }
+                ]
+            }
+        ]
+    }
+}

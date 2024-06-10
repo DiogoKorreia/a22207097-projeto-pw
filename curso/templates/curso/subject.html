@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ subject.name }}</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'curso/CursoEstilo.css' %}">
+</head>
+<body>
+    <div class="container">
+        <div class="subject-info">
+            <h1>{{ subject.name }}</h1>
+            <div class="info-section">
+                <h2>Detalhes da Disciplina</h2>
+                <p><strong>Ano:</strong> {{ subject.year }}</p>
+                <p><strong>Semestre:</strong> {{ subject.semester }}</p>
+                <p><strong>ECTS:</strong> {{ subject.ects }}</p>
+            </div>
+            <div class="info-section">
+                <h2>Outras Informações</h2>
+                <p><strong>Código Curricular:</strong> {{ subject.curricularIUnitReadableCode }}</p>
+                <p><strong>Área Científica:</strong> {{ subject.scientific_area }}</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

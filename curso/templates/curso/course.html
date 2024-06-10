@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ course.course_name }}</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'curso/CursoEstilo.css' %}">
+</head>
+<body>
+    <div class="container">
+        <div class="course-info">
+            <h1>{{ course.course_name }}</h1>
+            <div class="info-section">
+                <h2>Informações Gerais</h2>
+                <p><strong>Área Científica:</strong> {{ course.scientific_area }}</p>
+                <p><strong>ECTS:</strong> {{ course.course_ects }}</p>
+                <p><strong>Semestres:</strong> {{ course.semesters }}</p>
+                <p><strong>Contato da Direção:</strong> {{ course.direction_contact }}</p>
+                <p><strong>Email da Direção:</strong> {{ course.direction_email }}</p>
+                <p><strong>Contato da Secretaria do Curso:</strong> {{ course.course_secretariat_contact }}</p>
+                <p><strong>Email da Secretaria do Curso:</strong> {{ course.course_secretariat_email }}</p>
+            </div>
+            <div class="info-section">
+                <h2>Condições de Acesso e Oportunidades</h2>
+                <p><strong>Condições de Acesso:</strong> {{ course.access_conditions }}</p>
+                <p><strong>Oportunidades de Carreira:</strong> {{ course.career_opportunities }}</p>
+                <p><strong>Competências:</strong> {{ course.competences }}</p>
+                <p><strong>Estudos Futuros:</strong> {{ course.future_studies }}</p>
+                <p><strong>Recipients:</strong> {{ course.recipients }}</p>
+                <p><strong>Guest Teachers:</strong> {{ course.guest_teachers }}</p>
+            </div>
+            <div class="info-section">
+                <h2>Infraestrutura e Objetivos</h2>
+                <p><strong>Infraestrutura:</strong> {{ course.infrastructure }}</p>
+                <p><strong>Objetivos:</strong> {{ course.objectives }}</p>
+                <p><strong>Apresentação:</strong> {{ course.presentation }}</p>
+            </div>
+            <div class="info-section">
+                <h2>Professores e Área Científica</h2>
+                <p><strong>Professores:</strong>
+                    {% for teacher in course.scientific_area.teachers.all %}
+                        {{ teacher.name }},
+                    {% endfor %}
+                </p>
+                <p><strong>Programa:</strong> {{ course.scientific_area.program }}</p>
+                <p><strong>Objetivos da Área Científica:</strong> {{ course.scientific_area.objectives }}</p>
+                <p><strong>Descrição da Área Científica:</strong> {{ course.scientific_area.description }}</p>
+            </div>
+            <div class="info-section">
+                <h2>Projetos do Curso</h2>
+                <ul>
+                    {% for project in course.project_set.all %}
+                        <li>{{ project.title }} - {{ project.description }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+            <div class="info-section">
+                <h2>Disciplinas</h2>
+                {% for year in flat_plan.years.all %}
+                    <h3>Ano {{ year }}</h3>
+                    {% for subject in year.subjects.all %}
+                        <div class="subject">
+                            <h4>{{ subject.name }}</h4>
+                            <p><strong>Ano:</strong> {{ subject.year }}</p>
+                            <p><strong>Semestre:</strong> {{ subject.semester }}</p>
+                            <p><strong>ECTS:</strong> {{ subject.ects }}</p>
+                            <p><strong>Código Curricular:</strong> {{ subject.curricularIUnitReadableCode }}</p>
+                            <p><strong>Área Científica:</strong> {{ subject.scientific_area }}</p>
+                        </div>
+                    {% endfor %}
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</body>
+</html>

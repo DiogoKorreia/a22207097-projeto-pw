@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'portofolio/portofolioEstilo.css' %}">
+    <title>API Meteo</title>
+</head>
+<body>
+    <div class="text">
+        <h1>API Meteo</h1>
+            <h3>Esta API permite interagir com uma aplicação Django de meteorologia.</h3>
+
+
+            <h4>EndPoints Disponíveis</h4>
+            <ul>
+                <li>Listar Cidades</li>
+                <li>Previsão meteorologica de hoje</li>
+                <li>Previsão meteorologia para os próximos 5 dias</li>
+            </ul>
+
+            <h4>Listar Cidades</h4>
+            <ul>
+                <li>Método: GET</li>
+                <li>URL:<a href="https://api.ipma.pt/open-data/distrits-islands.json">:Link</a></li>
+                <li>Descrição:</li>
+            </ul>
+
+
+            <h4>Previsão meteorologica de hoje</h4>
+            <ul>
+                <li>Método: GET</li>
+                <li>URL:<a href="http://api.ipma.pt/open-data/forecast/meteorology/cities/daily/1010500.json">:Link</a></li>
+                <li>Descrição:</li>
+            </ul>
+
+
+            <h4>Previsão meteorologia para os próximos 5 dias</h4>
+            <ul>
+                <li>Método: GET</li>
+                <li>URL:<a href="http://api.ipma.pt/open-data/forecast/meteorology/cities/daily/1010500.json">:Link</a></li>
+                <li>Descrição:</li>
+            </ul>
+    </div>
+</body>
+</html>

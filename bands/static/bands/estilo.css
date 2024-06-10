@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Danfo&family=Sedan+SC&display=swap');
+
+/* Global*/
+* {
+    font-family: "Sedan SC", serif;
+    font-style: normal;
+}
+
+html{
+    background-image: url('https://source.unsplash.com/a-close-up-of-a-white-marble-surface-li0iC0rjvvg');
+}
+
+/*  Bands   */
+
+.bands-layout > *{
+    color: black;
+    border: 1px solid black;
+    padding:10px;
+    font-size:30px;
+}
+
+.bands-layout > header{
+    grid-area:header;
+    border: 1px solid black;
+    text-align:center;
+    text-shadow: 10px 10px 10px;
+}
+
+.bands-layout > footer{
+    grid-area:footer;
+    border: 1px solid black;
+    text-align:center;
+}
+
+.bands-layout > nav{
+    grid-area:nav;
+    display: flex;
+    flex-direction:column;
+    justify-content: flex-start;
+}
+
+.bands-layout > main{
+    grid-area:main;
+    border: 1px solid black;
+}
+
+.bands-layout > main h1{
+    text-align:center;
+}
+
+img{
+    width:200px;
+    height:200px;
+    box-shadow: 10px 10px 10px black;
+}
+
+
+
+button{
+    font-size:16px;
+    color:black;
+    border:2px solid black;
+    border-style:solid;
+    border-radius:10px;
+}
+
+button:hover{
+}
+
+/* Band Container */
+
+.bands-layout{
+    margin:30px;
+    display:grid;
+    grid-template-areas:
+    'header header nav'
+    'main    main   main'
+    'footer footer footer';
+
+    gap:10px;
+    padding: 10px;
+
+    grid-template-columns: 1fr 10vw;
+    grid-template-rows: 20vh 1fr 10vh;
+}
+
+/* BandsList */
+
+.bands-container {
+    display:flex;
+    flex-flow:row wrap;
+    justify-content: space-evenly;
+
+    text-align:center;
+    gap:10px;
+    padding:10px;
+}
+
+
+.band-container {
+    display:grid;
+    grid-template-areas:
+    'band-header band-header band-header'
+    'artists albums albums';
+}
+
+
+/* Band Media */
+
+@media (max-width:700px){
+
+    .bands-layout > nav{
+        flex-direction:row;
+    }
+
+    .bands-layout{
+        height:auto;
+        grid-template-areas:
+        'header'
+        'nav'
+        'main'
+        'footer';
+        grid-template-columns: auto;
+        grid-template-rows: 10vh 10vh 1fr 5vh;
+    }
+
+    .bands-container{
+        flex-flow: column wrap;
+        align-items:center;
+    }
+}

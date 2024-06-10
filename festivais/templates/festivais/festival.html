@@ -1,0 +1,17 @@
+{% extends 'festivais/layout.html' %}
+{% load getFestivalBands %}
+
+{% block content %}
+
+<h5>Bandas:</h5>
+<ul>
+{% for banda in festival|get_festival_bands %}
+    <p>{{banda.nome}}</p>
+{% endfor %}
+</ul>
+
+<img src="{{ festival.image.url }}" width="100px" alt="festival cover">
+
+<a href="{% url 'festivais:festivais_view' %}">Lista de Festivais</a>
+
+{% endblock %}

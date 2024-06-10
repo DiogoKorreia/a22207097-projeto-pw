@@ -1,0 +1,26 @@
+{% extends 'bands/layout.html' %}
+{% load isInGroup %}
+
+{% block content %}
+<center>
+
+    {% if user.is_authenticated and user|is_in_group:'editores de bandas' %}
+        <button>Edit</button>
+        <button>Create</button>
+        <button>Delete</button>
+    {% endif %}
+
+    {% if music.image %}
+        <img src="{{ music.image.url }}" width="150px" alt="Music cover">
+    {% else %}
+        <p>No image available</p>
+    {% endif %}
+
+    <h3>Music : {{music.title}} - {{music.rating}} ⭐</h3>
+
+
+    <p>Duration : {{ music.duration }}       Released in : {{ music.releaseDate }}</p>
+    <a href="{% url 'bands:album_details' music.album.id %}">{{music.album.name}}</a>
+    <p>Music link : {{ music.musicLink}}</p>
+</center>
+{% endblock %}
